@@ -3,7 +3,6 @@ import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import axios from 'axios';
 import './Home.css';
-import { Padding } from '@mui/icons-material';
 
 const Home = () => {
   const [Name, setName] = useState('');
@@ -11,7 +10,6 @@ const Home = () => {
   const [Gmail, setMail] = useState('');
   const [Pass, setPwd] = useState('');
 
-  // Posting data
   const dataPost = () => {
     axios.post("http://localhost:3000/posts", { Name, Phonenumber, Gmail, Pass })
       .then(() => {
@@ -28,7 +26,6 @@ const Home = () => {
 
   return (
     <div>
-      {/* Pricing Plans Section */}
       <section className="pricing-section">
         <div className="pricing-card">
           <h3>Standard</h3>
@@ -73,7 +70,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Form Section */}
       <div className="align">
         <TextField label="Name" variant="filled" value={Name} onChange={(e) => setName(e.target.value)} style={{ backgroundColor: "white" }} />
           <br />
