@@ -1,0 +1,9 @@
+.heady{
+    display: flex;
+    justify-content: center;  /* Horizontally centers the text */
+    color: rgb(244, 55, 55);
+    background-color: aqua;
+    background-image: image();
+    font-family: serif;
+    border-radius: 3cm;
+}
